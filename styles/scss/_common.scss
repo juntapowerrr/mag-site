@@ -1,0 +1,58 @@
+//containers
+.head-container {
+    max-width: 95%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+//buttons
+.btn {
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-radius: 30px 30px 30px 30px;
+    padding: 15px 30px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+
+    &--write {
+        color: #ffffff;
+        background-color: #b63535;
+        border-color: #cc4b4b;
+
+        i {
+            margin-right: 5px;
+        }
+    }
+
+    &--serv {
+        background-color: transparent;
+        border-color: #cc4b4b;
+        color: #305595;
+        width: 180px;
+        height: 60px;
+        text-align: center;
+
+        i {
+            margin-left: 5px;
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all .3s ease;
+        cursor: pointer;
+    }
+}
+
+//dividers
+hr.rounded {
+    border-top: 5px solid #fff;
+    border-radius: 5px;
+}

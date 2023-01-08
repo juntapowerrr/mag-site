@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+Disallow: /ajax.php
+Sitemap: https://www.mag-nika.ru/sitemap.xml

@@ -1,0 +1,125 @@
+.log-form {
+    width: 95%;
+    min-width: 320px;
+    max-width: 475px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    // -webkit-box-shadow: 0px 0px 159px 100px rgba(0, 0, 0, 0.75);
+    // -moz-box-shadow: 0px 0px 159px 100px rgba(0, 0, 0, 0.75);
+    // box-shadow: 0px 0px 159px 100px rgba(0, 0, 0, 0.75);
+    border: 2px solid #fff;
+    //display: none;
+    z-index: 9999;
+    border-radius: 15px;
+}
+
+.log-form form {
+    display: block;
+    width: 100%;
+    padding: 25px;
+}
+
+.log-form h2 {
+    width: 100%;
+    color: #5d5d5d;
+    font-size: 1.35em;
+    display: block;
+    background: #2a2a2a;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    //-webkit-box-shadow: inset 0px 1px 1px fadeout(white, 95%);
+    //box-shadow: inset 0px 1px 1px fadeout(white, 95%);
+    margin: 0;
+    font-weight: 200;
+    border-radius: 15px;
+}
+
+.log-form input {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+    margin-bottom: 2em;
+    padding: .5em 0;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 1.25em;
+    color: #757575;
+}
+
+.log-form input:focus {
+    outline: none;
+}
+
+.log-form .btn {
+    display: inline-block;
+    background: #1fb5bf;
+    border: 1px solid #1ba0a9;
+    padding: .5em 2em;
+    color: white;
+    margin-right: .5em;
+    -webkit-box-shadow: inset 0px 1px 0px fadeout(white, 80%);
+    box-shadow: inset 0px 1px 0px fadeout(white, 80%);
+}
+
+.log-form .btn:hover {
+    background: #23cad5;
+}
+
+.log-form .btn:active {
+    background: #1fb5bf;
+    -webkit-box-shadow: inset 0px 1px 1px fadeout(black, 90%);
+    box-shadow: inset 0px 1px 1px fadeout(black, 90%);
+}
+
+.log-form .btn:focus {
+    outline: none;
+}
+
+.log-form .forgot {
+    color: #33d3de;
+    line-height: .5em;
+    position: relative;
+    top: 2.5em;
+    text-decoration: none;
+    font-size: .75em;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.log-form .forgot:hover {
+    color: #1ba0a9;
+}
+
+.popup {
+    //box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.75);
+    visibility: hidden;
+    /*скрываем окно*/
+    transition: all .3s ease;
+}
+
+.popup.active {
+    visibility: visible;
+    /*показываем окно*/
+    top: 50%;
+    /*окно выдвигается сверху*/
+    transition: all .3s ease;
+}
+
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    filter: invert(1);
+}
